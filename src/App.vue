@@ -1,12 +1,13 @@
 <template>
   <main>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
     <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12 dark:bg-dark">
       <div class="relative py-3 sm:max-w-xl sm:mx-auto">
         <div class="absolute inset-0 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-2xl gradient"></div>
         <div class="relative px-4 py-8 bg-white shadow-lg sm:rounded-2xl sm:p-11 dark:bg-dark-2 dark:text-gray-100">
           <div class="max-w-xl mx-auto">
             <div>
-              <h1 class="text-4xl font-medium">Heilà! 👋</h1>
+              <h1 class="text-4xl font-medium animated fadeInDown faster">Heilà! 👋</h1>
               <p class="text-2xl">
                 Io sono <span id="nameTyper" class="font-mono"></span>
               </p>
