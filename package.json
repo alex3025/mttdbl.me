@@ -7,7 +7,6 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "bootstrap-icons-vue": "^0.6.0",
     "typeit": "^7.0.4",
     "vue": "^3.0.5"
   },
