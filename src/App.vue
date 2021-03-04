@@ -6,7 +6,7 @@
         <div class="relative px-4 py-8 bg-white shadow-lg sm:rounded-2xl sm:p-11 dark:bg-dark-2 dark:text-gray-100">
           <div class="max-w-xl mx-auto">
             <div>
-              <h1 class="text-4xl font-medium">Heilà! 👋</h1>
+              <h1 class="text-4xl font-medium">Ciao! 👋</h1>
               <p class="text-2xl">
                 Mi chiamo <span id="nameTyper" class="font-mono"></span>
               </p>
