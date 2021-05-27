@@ -5,7 +5,7 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Roboto', 'sans-serif'],
+      sans: ['Poppins', 'sans-serif'],
       mono: ['Roboto Mono', 'monospace'],
     },
     colors: {
@@ -14,9 +14,18 @@ module.exports = {
     },
     extend: {
       colors: {
-        'gray-825': '#1B1B1E',
-        'gray-850': '#202023',
-        'gray-750': '#333338'
+        gray: {
+          950: '#141417',
+          925: '#161619',
+          850: '#202023',
+          825: '#232326',
+          750: '#34343A',
+          725: '#393940',
+          650: '#44444B',
+          625: '#4B4B53',
+          550: '#5E5E65',
+          525: '#67676F'
+        },
       }
     },
   },

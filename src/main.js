@@ -4,7 +4,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import App from './App.vue'
 import Index from './pages/Index.vue'
-import CurriculumVitae from './pages/CurriculumVitae.vue'
 
 import './index.css'
 
@@ -13,10 +12,6 @@ const routes = [
   {
     path: '/',
     component: Index
-  },
-  {
-    path: '/cv',
-    component: CurriculumVitae
   }
 ]
 

@@ -1,7 +1,5 @@
 <template>
-    <main>
-        <div class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12 dark:bg-gray-900">
-            <router-view></router-view>
-        </div>
-    </main>
+  <main class="min-h-screen bg-gray-50 sm:bg-gray-100 dark:bg-gray-850 py-6 flex flex-col justify-center sm:py-12 sm:dark:bg-gray-950 overflow-hidden">
+    <router-view></router-view>
+  </main>
 </template>
