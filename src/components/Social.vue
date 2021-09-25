@@ -1,5 +1,5 @@
 <template>
-  <li class="flex flex-col items-center text-3xl dark:text-gray-100 dark:hover:text-gray-300 text-gray-850 duration-100 hover:text-gray-950">
+  <li class="flex flex-col items-center text-4xl sm:text-3xl dark:text-gray-100 dark:hover:text-gray-250 text-gray-850 transition-all duration-200 hover:text-gray-950">
     <a :href="link" target="_blank" @mouseover="showTooltip = true" @mouseleave="showTooltip = false">
       <slot />
     </a>
