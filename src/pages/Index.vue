@@ -34,38 +34,33 @@
   </div>
 </template>
 
-<script>
-import TypeIt from "typeit";
-import Social from "../components/Social.vue"
+<script setup>
+import { onMounted, computed } from 'vue'
+import TypeIt from "typeit"
 import twemoji from "twemoji"
 
-export default {
-  components: { Social },
-  mounted () {
-    new TypeIt("#nameTyper", {
-      speed: 120,
-      lifeLike: true,
-      startDelay: 300
-    })
-    .pause(550)
-    .type('alex3025', {delay: 100})
-    .pause(300)
-    .delete(8, {speed: 125, delay: 100})
-    .type('Matteo Diblas.')
-    .go();
-  },
-  computed: {
-    randomGreeting() {
-      const greetings = ['Ciao', 'We-we', 'Salve', 'Sciao', 'Ehilà']
-      return greetings[Math.floor(Math.random() * greetings.length)]
-    },
-    emoji() {
-      return twemoji.parse('👋', { size: 'svg', ext: '.svg' })
-    }
-  }
-}
-</script>
+import Social from "../components/Social.vue"
 
-<style>
-@import "../../node_modules/animate.css/animate.min.css";
-</style>
+onMounted(() => {
+  new TypeIt("#nameTyper", {
+    speed: 120,
+    lifeLike: true,
+    startDelay: 300
+  })
+  .pause(550)
+  .type('alex3025', {delay: 100})
+  .pause(300)
+  .delete(8, {speed: 125, delay: 100})
+  .type('Matteo Diblas.')
+  .go();
+})
+
+const randomGreeting = computed(() => {
+  const greetings = ['Ciao', 'We-we', 'Salve', 'Sciao', 'Ehilà']
+  return greetings[Math.floor(Math.random() * greetings.length)]
+})
+
+const emoji = computed(() => {
+  return twemoji.parse('🎄', { size: 'svg', ext: '.svg' })
+})
+</script>
