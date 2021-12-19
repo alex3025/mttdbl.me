@@ -1,15 +1,18 @@
 <template>
   <div class="relative py-3 px-2 sm:max-w-xl sm:mx-auto animate__animated animate__flipInY">
     <div class="absolute inset-0 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-2xl gradient hidden sm:block"></div>
-    <div class="relative px-4 py-8 bg-gray-50 sm:shadow-lg sm:border border-gray-300 dark:border-gray-750 sm:rounded-2xl sm:p-10 select-none dark:bg-gray-850 text-gray-800 dark:text-gray-75">
+    <div class="relative px-4 py-8 sm:bg-gray-50 sm:shadow-lg sm:border border-gray-300 dark:border-gray-750 sm:rounded-2xl sm:p-10 select-none sm:dark:bg-gray-850 bg-transparent text-gray-800 dark:text-gray-75">
       <div class="sm:max-w-xl max-w-md mx-auto">
         <div class="text-center sm:text-left dark:drop-shadow sm:drop-shadow-none">
           <h1 class="sm:text-4xl text-5xl font-bold flex items-center justify-center sm:justify-start dark:drop-shadow-lg">
             <span class="gradient text gradient-none">{{ randomGreeting }}!</span>
             <span v-html="emoji"></span>
           </h1>
-          <p class="text-2xl mt-3.5 sm:mt-1">
-            Mi chiamo <span id="nameTyper" class="font-mono font-medium"></span>
+          <p class="flex flex-wrap justify-center items-center sm:justify-start text-2xl mt-3.5 sm:mt-1">
+            <span class="mr-1.5">
+              Mi chiamo
+            </span>
+            <span id="nameTyper" class="font-mono font-medium"></span>
           </p>
           <p class="text-xl mt-3.5 dark:text-gray-325 text-gray-625">
             Adoro l'informatica e la musica elettronica.
