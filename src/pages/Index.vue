@@ -8,8 +8,8 @@
             <span class="gradient text gradient-none">{{ randomGreeting }}!</span>
             <span v-html="emoji"></span>
           </h1>
-          <p class="flex flex-wrap justify-center items-center sm:justify-start text-2xl mt-3.5 sm:mt-1">
-            <span class="mr-1.5">
+          <p class="text-2xl mt-3.5 sm:mt-1">
+            <span>
               Mi chiamo
             </span>
             <span id="nameTyper" class="font-mono font-medium"></span>
