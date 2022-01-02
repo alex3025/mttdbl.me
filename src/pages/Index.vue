@@ -64,6 +64,6 @@ const randomGreeting = computed(() => {
 })
 
 const emoji = computed(() => {
-  return twemoji.parse('🎄', { size: 'svg', ext: '.svg' })
+  return twemoji.parse('👋', { size: 'svg', ext: '.svg' })
 })
 </script>
