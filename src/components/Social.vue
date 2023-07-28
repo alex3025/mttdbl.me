@@ -1,5 +1,7 @@
 <template>
-  <li class="flex flex-col items-center text-4xl sm:text-3xl dark:text-gray-100 dark:hover:text-gray-250 text-gray-850 transition-all duration-200 hover:text-gray-950">
+  <li
+    class="flex flex-col items-center text-4xl sm:text-3xl dark:text-gray-100 dark:hover:text-gray-250 text-gray-850 transition-all duration-200 hover:text-gray-950"
+  >
     <a :href="link" target="_blank" @mouseover="showTooltip = true" @mouseleave="showTooltip = false">
       <slot />
     </a>
@@ -11,7 +13,10 @@
       leave-from-class="transform opacity-100 scale-100"
       leave-to-class="transform opacity-0 scale-95"
     >
-      <div v-if="showTooltip" class="bg-gray-800 text-gray-200 dark:text-gray-300 origin-top shadow-md rounded-md text-sm absolute mt-9 p-0.5 px-1">
+      <div
+        v-if="showTooltip"
+        class="bg-gray-800 text-gray-200 dark:text-gray-300 origin-top shadow-md rounded-md text-sm absolute mt-9 p-0.5 px-1"
+      >
         {{ name }}
       </div>
     </transition>
@@ -24,10 +29,10 @@ export default {
     name: String,
     link: String
   },
-  data () {
+  data() {
     return {
       showTooltip: false
-    }
+    };
   }
-}
+};
 </script>

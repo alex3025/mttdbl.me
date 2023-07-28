@@ -32,3 +32,7 @@
 .emoji {
     @apply sm:h-9 sm:w-9 h-10 w-10 ml-2.5;
 }
+
+:root {
+  --animate-delay: 0.8s;
+}
