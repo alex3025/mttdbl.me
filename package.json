@@ -11,7 +11,7 @@
     "bootstrap-icons-vue": "^0.6.0",
     "twemoji": "^13.1.0",
     "typeit": "^7.0.4",
-    "vue": "^3.0.5",
+    "vue": "^3.2.26",
     "vue-router": "^4.0.6"
   },
   "devDependencies": {
