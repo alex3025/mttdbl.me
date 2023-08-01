@@ -31,7 +31,7 @@
               <Social name="Instagram" link="https://instagram.com/mttdbl"><b-icon-instagram /></Social>
             </div>
 
-            <Social name="E-Mail" link="mailto:alex3025game@gmail.com"><b-icon-envelope-fill /></Social>
+            <Social name="E-Mail" link="mailto:matteo@mttdbl.me"><b-icon-envelope-fill /></Social>
           </ul>
         </div>
       </div>
