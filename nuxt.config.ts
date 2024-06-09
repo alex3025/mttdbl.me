@@ -4,11 +4,6 @@ export default defineNuxtConfig({
 
   modules: ['@unocss/nuxt', '@nuxtjs/color-mode', 'nuxt-icon', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxtjs/plausible'],
 
-  // @nuxtjs/plausible
-  plausible: {
-    apiHost: 'https://trckng.masterplex.eu'
-  },
-
   // @nuxtjs/color-mode (UnoCSS compat)
   colorMode: {
     classSuffix: ''
