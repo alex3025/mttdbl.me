@@ -1,2 +1,5 @@
-# alex3025's Website
-This is the repo for my landing page/website.
+# mttdbl.me
+
+My personal corner on the internet.
+
+_&copy; Matteo D. 2024_

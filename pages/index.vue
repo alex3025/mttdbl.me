@@ -1,0 +1,134 @@
+<template>
+  <main class="max-w-5xl w-full space-y-5 z-10 mt-30 sm:mt-0 fade-in-bottom">
+    <div class="flex-y flex-col space-y-10 sm:space-y-0 sm:flex-row justify-between">
+      <div class="space-y-2.5 sm:space-y-1.5 text-center sm:text-left">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-black inline mr-2">Matteo Diblas</h1>
+          <p class="font-mono text-gray-700 text-xs sm:(text-sm mr-5) inline-block dark:text-gray-500 select-none">
+            (he/him)
+          </p>
+        </div>
+
+        <div>
+          <div class="font-mono dark:text-gray-250 text-gray-600">
+            <i>a.k.a.</i>
+            <TextScrambler class="ml-2.3 inline" :delay="600">
+              <span class="font-medium dark:text-gray-75 text-gray-850">alex3025</span>
+            </TextScrambler>
+            /
+            <TextScrambler class="inline" :delay="600" :speed="200">
+              <span class="font-medium dark:text-gray-75 text-gray-850">MTTDBL</span>
+            </TextScrambler>
+          </div>
+        </div>
+      </div>
+
+      <ul class="flex-y sm:(grid gap-5 grid-cols-3 space-x-0) md:flex dark:text-gray-350 text-gray-800 space-x-4.5">
+        <li v-for="social in socials" :key="social.url">
+          <NuxtLink
+            :to="social.url"
+            target="_blank"
+            :title="social.name"
+            class="kb-focus dark:(hover:text-white focus-visible:text-white) hover:text-black"
+          >
+            <Icon :name="social.icon" class="sm:(h-8 w-8) h-10 w-10 transition-colors duration-250" />
+          </NuxtLink>
+        </li>
+      </ul>
+    </div>
+
+    <div class="mx-6 sm:mx-a border-b dark:b-white/10 b-gray-100" />
+
+    <DelayedAnimation
+      animation="fadeInUp"
+      class="text-gray-800 text-xl dark:text-gray-200 space-y-4.5 px-6 sm:px-0 opacity-0"
+    >
+      <template v-if="$i18n.locale === 'it'">
+        <p>
+          Sono un giovane <b>appassionato di tecnologia</b>, nato e cresciuto in Italia.<br />
+          La mia passione per tutto ciò che riguarda il mondo tecnologico mi accompagna fin da quando ero bambino.
+        </p>
+
+        <p>
+          Attualmente, mi occupo di <b>configurazione</b> e <b>manutenzione</b> di <b>sistemi informatici</b>. <br />
+          Nel tempo libero, mi dedico allo sviluppo di <b>strumenti</b> e <b>applicazioni</b> che permettono di
+          <b>automatizzare</b> processi ripetitivi, ma sopratutto di <b>semplificare</b> il mio lavoro e quello degli
+          altri.
+        </p>
+
+        <p>
+          Quando non ho a che fare con un computer, mi piace <b>suonare</b> la <b>batteria</b> e
+          <b>comporre musica elettronica</b>.
+        </p>
+
+        <p class="text-base">P.S. puoi <b>contattarmi</b> scrivendo a <FakeEmail /> o tramite i miei socials :)</p>
+      </template>
+
+      <template v-else-if="$i18n.locale === 'en'">
+        <p>
+          I'm a young <b>tech enthusiast</b> of 19 years old, born and raised in Italy.<br />
+          My passion for everything related to the tech world has been with me since I was a child.
+        </p>
+
+        <p>
+          Currently, I deal with <b>configuration</b> and <b>maintenance</b> of <b>IT infrastructures</b>. <br />
+          In my free time, I dedicate myself to the development of <b>tools</b> and <b>applications</b> that allow me to
+          <b>automate</b> repetitive tasks, but mainly to make my work and that of others <b>easier</b>.
+        </p>
+
+        <p>
+          When I'm not hands-on with a computer, I like to <b>play</b> the <b>drums</b> and
+          <b>compose electronic music</b>.
+        </p>
+
+        <p class="text-base">P.S. you can <b>contact me</b> by writing to <FakeEmail /> or through my socials :)</p>
+      </template>
+    </DelayedAnimation>
+  </main>
+</template>
+
+<script setup lang="ts">
+const socials = [
+  {
+    name: 'LinkedIn',
+    url: '/linkedin',
+    icon: 'uil:linkedin'
+  },
+  {
+    name: 'GitHub',
+    url: '/github',
+    icon: 'uil:github'
+  },
+  {
+    name: 'Reddit',
+    url: '/reddit',
+    icon: 'ion:social-reddit'
+  },
+  {
+    name: 'SoundCloud',
+    url: '/soundcloud',
+    icon: 'ph:soundcloud-logo-fill'
+  },
+  {
+    name: 'Spotify',
+    url: '/spotify',
+    icon: 'ri:spotify-fill'
+  },
+  {
+    name: 'Instagram',
+    url: '/instagram',
+    icon: 'uil:instagram'
+  }
+];
+
+useHead({
+  title: 'Matteo Diblas'
+});
+</script>
+
+<style scoped>
+/* Highlighted words */
+b {
+  @apply font-semibold dark:text-white text-black;
+}
+</style>
