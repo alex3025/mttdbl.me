@@ -27,7 +27,7 @@ export default defineConfig({
   ],
   theme: {
     colors: {
-      // my personal gray palette carefully handpicked
+      // My personal carefully handpicked gray palette
       gray: {
         975: '#0A0A0A',
         950: '#0F0F10',
@@ -82,9 +82,10 @@ export default defineConfig({
   },
   shortcuts: {
     'flex-y': 'flex items-center',
-    glassed: 'bg-clip-padding backdrop-filter backdrop-blur-xl',
     'kb-focus': 'focus-visible:(outline outline-3 outline-white/20 outline-offset-5 rounded)'
   },
   transformers: [transformerVariantGroup(), transformerDirectives()],
+
+  // Pre-compute all translate-x-1 to translate-x-50 to allow conditional classes
   safelist: [...Array.from({ length: 50 }, (_, i) => `translate-x-${i + 1}`)]
 });
