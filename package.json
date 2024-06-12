@@ -24,8 +24,11 @@
     "@unocss/transformer-variant-group": "^0.61.0",
     "@vueuse/core": "^10.11.0",
     "@vueuse/nuxt": "^10.11.0",
+    "browserslist": "^4.23.1",
+    "lightningcss": "^1.25.1",
     "nuxt-icon": "^0.6.10",
     "prettier": "3.3.2",
-    "scramble-text": "^0.0.9"
+    "scramble-text": "^0.0.9",
+    "unocss-preset-autoprefixer": "^0.0.7"
   }
 }

@@ -3,6 +3,8 @@ import { defineConfig, presetUno, presetWebFonts } from 'unocss';
 import transformerVariantGroup from '@unocss/transformer-variant-group';
 import transformerDirectives from '@unocss/transformer-directives';
 
+import presetAutoprefixer from 'unocss-preset-autoprefixer';
+
 export default defineConfig({
   presets: [
     presetUno(),
@@ -20,7 +22,8 @@ export default defineConfig({
           italic: true
         }
       }
-    })
+    }),
+    presetAutoprefixer()
   ],
   theme: {
     colors: {
