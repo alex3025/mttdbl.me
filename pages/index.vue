@@ -52,7 +52,7 @@
         <p>
           Attualmente, mi occupo di <b>configurazione</b> e <b>manutenzione</b> di <b>sistemi informatici</b>. <br />
           Nel tempo libero, mi dedico allo sviluppo di <b>strumenti</b> e <b>applicazioni</b> che permettono di
-          <b>automatizzare</b> processi ripetitivi, ma sopratutto di <b>semplificare</b> il mio lavoro e quello degli
+          <b>automatizzare</b> processi ripetitivi, ma soprattutto di <b>semplificare</b> il mio lavoro e quello degli
           altri.
         </p>
 
