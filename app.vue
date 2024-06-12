@@ -17,11 +17,14 @@
     <footer class="my-10 text-center text-gray-500 dark:text-gray-500 w-full max-w-sm px-6 sm:px-6">
       <LangSwitcher class="mx-a animate-fade-in animate-ease animate-duration-1000" />
     </footer>
+
+    <!-- Speed Insights from Vercel -->
+    <SpeedInsights />
   </div>
 </template>
 
 <script setup lang="ts">
-import '@unocss/reset/tailwind.css'; // Import the style reset
+import { SpeedInsights } from '@vercel/speed-insights/nuxt';
 
 useHead({
   titleTemplate: title => `${title} • mttdbl.me`,

@@ -4,6 +4,8 @@ export default defineNuxtConfig({
 
   modules: ['@unocss/nuxt', '@nuxtjs/color-mode', 'nuxt-icon', '@nuxtjs/i18n', '@vueuse/nuxt', '@nuxtjs/plausible'],
 
+  css: ['@unocss/reset/tailwind.css'],
+
   // @nuxtjs/color-mode (UnoCSS compat)
   colorMode: {
     classSuffix: ''
@@ -13,7 +15,6 @@ export default defineNuxtConfig({
   i18n: {
     defaultLocale: 'it',
     strategy: 'no_prefix',
-    // skipSettingLocaleOnNavigate: true,
     locales: [
       { code: 'it', iso: 'it-IT', name: 'Italiano' },
       { code: 'en', iso: 'en-US', name: 'English' }
