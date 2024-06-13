@@ -1,5 +1,7 @@
-# mttdbl.me
+# [mttdbl.me](https://mttdbl.me)
 
 My personal corner on the internet.
 
-_&copy; Matteo D. 2024_
+Made with [Nuxt](https://nuxt.com) and deployed on [Vercel](https://vercel.com).
+
+_&copy; Matteo D. &mdash; `2024`_
