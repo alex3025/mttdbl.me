@@ -1,5 +1,5 @@
 <template>
-  <div :id :class="{ '!opacity-0': !isReady }">
+  <div :id :class="{ 'motion-safe:!opacity-0': !isReady }">
     <slot />
   </div>
 </template>

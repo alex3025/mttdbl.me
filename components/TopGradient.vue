@@ -12,7 +12,10 @@ const { width: gradientWidth } = useElementSize(gradientDiv);
 
 onMounted(() => {
   watchEffect(() => {
-    document.documentElement.style.setProperty('--gradient-div-width', -(gradientWidth.value * 2).toString() + 'px');
+    document.documentElement.style.setProperty(
+      '--gradient-div-width',
+      -(gradientWidth.value * 2).toString() + 'px'
+    );
   });
 });
 </script>
@@ -29,14 +32,10 @@ onMounted(() => {
 }
 
 .gradient {
+  @apply motion-reduce:animate-none;
+
   background: linear-gradient(to right, #00eeff, #008cff, #532cff, #008cff, #00eeff);
   background-size: auto 100%;
   animation: gradientAnimation 15s linear infinite;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .gradient {
-    animation: none;
-  }
 }
 </style>

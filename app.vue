@@ -7,7 +7,9 @@
         <TopGradient />
 
         <div class="absolute flex-y justify-center top-3 right-0 left-0 z-10">
-          <ThemeSwitcher class="animate-fade-in-down animate-ease animate-duration-700" />
+          <ThemeSwitcher
+            class="animate-fade-in-down animate-ease animate-duration-700 motion-reduce:animate-none"
+          />
         </div>
       </div>
     </div>
@@ -15,7 +17,9 @@
     <NuxtPage />
 
     <footer class="my-10 text-center text-gray-500 dark:text-gray-500 w-full max-w-sm px-6 sm:px-6">
-      <LangSwitcher class="mx-a animate-fade-in animate-ease animate-duration-1000" />
+      <LangSwitcher
+        class="mx-a animate-fade-in animate-ease animate-duration-1000 motion-reduce:animate-none"
+      />
     </footer>
 
     <!-- Speed Insights from Vercel -->
