@@ -6,7 +6,7 @@
   >
     <Icon
       :name="$colorMode.value === 'light' ? 'heroicons:moon-solid' : 'heroicons:sun'"
-      class="h-7 w-7 transition-all duration-250"
+      class="h-7 w-7 transition-all duration-250 motion-reduce:transition-none"
     />
   </button>
 </template>

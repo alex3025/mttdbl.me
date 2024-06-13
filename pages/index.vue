@@ -31,7 +31,7 @@
             :title="social.name"
             class="kb-focus dark:(hover:text-white focus-visible:text-white) hover:text-black"
           >
-            <Icon :name="social.icon" class="sm:(h-8 w-8) h-10 w-10 transition-colors duration-250" />
+            <Icon :name="social.icon" class="sm:(h-8 w-8) h-10 w-10 transition-colors motion-reduce:transition-none duration-250" />
           </NuxtLink>
         </li>
       </ul>

@@ -20,7 +20,7 @@ onMounted(() => {
 <style scoped>
 @keyframes gradientAnimation {
   from {
-    /* 896px (div size) * 2 */
+    /* div-size * 2 */
     background-position: var(--gradient-div-width) 0;
   }
   to {
@@ -32,5 +32,11 @@ onMounted(() => {
   background: linear-gradient(to right, #00eeff, #008cff, #532cff, #008cff, #00eeff);
   background-size: auto 100%;
   animation: gradientAnimation 15s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gradient {
+    animation: none;
+  }
 }
 </style>

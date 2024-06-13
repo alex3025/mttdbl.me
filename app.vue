@@ -67,7 +67,7 @@ useSeoMeta({
 }
 
 .fade-in-bottom > * {
-  opacity: 0;
+  @apply motion-reduce:(animate-none transition-none opacity-100) opacity-0;
   animation: fadeInUp 1s ease forwards;
 }
 </style>

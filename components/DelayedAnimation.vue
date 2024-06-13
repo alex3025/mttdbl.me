@@ -33,7 +33,7 @@ onUpdated(() => animate());
 
 <style scoped>
 div > * {
-  opacity: 0;
+  @apply motion-reduce:(animate-none transition-none) opacity-0;
   animation: v-bind('animation') 0.5s ease forwards;
 }
 </style>
