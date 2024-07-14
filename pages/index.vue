@@ -33,12 +33,7 @@
             :to="social.url"
             target="_blank"
             :title="social.name"
-            @click="
-              () =>
-                useTrackEvent('Social Click', {
-                  props: { name: social.name, url: social.url }
-                })
-            "
+            @click="() => useTrackEvent(`Social Click: ${social.name}`)"
             class="kb-focus dark:(hover:text-white focus-visible:text-white) hover:text-black"
           >
             <Icon
