@@ -8,13 +8,13 @@
 <script setup lang="ts">
 const gradientDiv = ref<HTMLDivElement | null>(null);
 
-const { width: gradientWidth } = useElementSize(gradientDiv);
+const { width } = useElementSize(gradientDiv);
 
 onMounted(() => {
   watchEffect(() => {
     document.documentElement.style.setProperty(
       '--gradient-div-width',
-      -(gradientWidth.value * 2).toString() + 'px'
+      -(width.value * 2).toString() + 'px'
     );
   });
 });
