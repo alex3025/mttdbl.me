@@ -14,11 +14,11 @@
         <div>
           <div class="font-mono dark:text-gray-250 text-gray-600">
             <i>a.k.a.</i>
-            <TextScrambler class="ml-2.3 inline" :delay="615">
+            <TextScrambler class="ml-2.3 inline" :delay="625">
               <span class="font-medium dark:text-gray-75 text-gray-850">alex3025</span>
             </TextScrambler>
             /
-            <TextScrambler class="inline" :delay="615" :speed="200">
+            <TextScrambler class="inline" :delay="625" :speed="200">
               <span class="font-medium dark:text-gray-75 text-gray-850">MTTDBL</span>
             </TextScrambler>
           </div>
