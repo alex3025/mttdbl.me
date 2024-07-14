@@ -12,26 +12,37 @@
         <div>
           <div class="font-mono dark:text-gray-250 text-gray-600">
             <i>a.k.a.</i>
-            <TextScrambler class="ml-2.3 inline" :delay="600">
+            <TextScrambler class="ml-2.3 inline" :delay="615">
               <span class="font-medium dark:text-gray-75 text-gray-850">alex3025</span>
             </TextScrambler>
             /
-            <TextScrambler class="inline" :delay="600" :speed="200">
+            <TextScrambler class="inline" :delay="615" :speed="200">
               <span class="font-medium dark:text-gray-75 text-gray-850">MTTDBL</span>
             </TextScrambler>
           </div>
         </div>
       </div>
 
-      <ul class="flex-y sm:(grid gap-5 grid-cols-3 space-x-0) md:flex dark:text-gray-350 text-gray-800 space-x-4.5">
+      <ul
+        class="flex-y sm:(grid gap-5 grid-cols-3 space-x-0) md:flex dark:text-gray-350 text-gray-800 space-x-4.5"
+      >
         <li v-for="social in socials" :key="social.url">
           <NuxtLink
             :to="social.url"
             target="_blank"
             :title="social.name"
+            @click="
+              () =>
+                useTrackEvent('Social Click', {
+                  props: { name: social.name, url: social.url }
+                })
+            "
             class="kb-focus dark:(hover:text-white focus-visible:text-white) hover:text-black"
           >
-            <Icon :name="social.icon" class="sm:(h-8 w-8) h-10 w-10 transition-colors motion-reduce:transition-none duration-250" />
+            <Icon
+              :name="social.icon"
+              class="sm:(h-8 w-8) h-10 w-10 transition-colors motion-reduce:transition-none duration-250"
+            />
           </NuxtLink>
         </li>
       </ul>
