@@ -57,42 +57,52 @@
       <template v-if="$i18n.locale === 'it'">
         <p>
           Sono un giovane <b>appassionato di tecnologia</b>, nato e cresciuto in Italia.<br />
-          La mia passione per tutto ciò che riguarda il mondo tecnologico mi accompagna fin da quando ero bambino.
+          La passione per tutto ciò che riguarda il mondo della tecnologia mi accompagna fin da
+          quando ero piccolo.
         </p>
 
         <p>
-          Attualmente, mi occupo di <b>configurazione</b> e <b>manutenzione</b> di <b>sistemi informatici</b>. <br />
-          Nel tempo libero, mi dedico allo sviluppo di <b>strumenti</b> e <b>applicazioni</b> che permettono di
-          <b>automatizzare</b> processi ripetitivi, ma soprattutto di <b>semplificare</b> il mio lavoro e quello degli
-          altri.
+          Attualmente, mi occupo di <b>configurazione</b> e <b>manutenzione</b> di
+          <b>sistemi informatici</b>. <br />
+          Nel frattempo, mi dedico anche allo sviluppo di <b>strumenti</b> e <b>applicazioni</b> che
+          permettono di <b>automatizzare</b> processi ripetitivi, con l'obiettivo di
+          <b>semplificare</b> e <b>velocizzare</b> il mio lavoro e quello degli altri.
         </p>
 
         <p>
-          Quando non ho a che fare con un computer, mi piace <b>suonare</b> la <b>batteria</b> e
+          Quando ho del tempo libero, mi piace <b>suonare</b> la <b>batteria</b> e
           <b>comporre musica elettronica</b>.
         </p>
 
-        <p class="text-base">P.S. puoi <b>contattarmi</b> scrivendo a <FakeEmail /> o tramite i miei socials :)</p>
+        <p class="text-base">
+          P.S. se vuoi <b>contattarmi</b>, puoi farlo scrivendo un e-mail a <FakeEmail /> oppure
+          tramite i miei socials :)
+        </p>
       </template>
 
       <template v-else-if="$i18n.locale === 'en'">
         <p>
-          I'm a young <b>tech enthusiast</b> of 19 years old, born and raised in Italy.<br />
+          I am a young <b>technology enthusiast</b>, born and raised in Italy.<br />
           My passion for everything related to the tech world has been with me since I was a child.
         </p>
 
         <p>
-          Currently, I deal with <b>configuration</b> and <b>maintenance</b> of <b>IT infrastructures</b>. <br />
-          In my free time, I dedicate myself to the development of <b>tools</b> and <b>applications</b> that allow me to
-          <b>automate</b> repetitive tasks, but mainly to make my work and that of others <b>easier</b>.
+          Currently, I am involved in the <b>configuration</b> and <b>maintenance</b> of
+          <b>IT infrastructures</b>. <br />
+          In the meantime, I also dedicate myself to the development of <b>tools</b> and
+          <b>applications</b> that allow me to <b>automate</b> repetitive processes, with the aim of
+          <b>simplifying</b> and <b>speeding up</b> my work and that of others.
         </p>
 
         <p>
-          When I'm not hands-on with a computer, I like to <b>play</b> the <b>drums</b> and
+          When I have some free time, I like to <b>play</b> the <b>drums</b> and
           <b>compose electronic music</b>.
         </p>
 
-        <p class="text-base">P.S. you can <b>contact me</b> by writing to <FakeEmail /> or through my socials :)</p>
+        <p class="text-base">
+          P.S. if you want to <b>contact me</b>, you can do so by sending an email to
+          <FakeEmail /> or through my social medias :)
+        </p>
       </template>
     </DelayedAnimation>
   </main>
