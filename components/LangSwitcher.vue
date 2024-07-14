@@ -6,7 +6,12 @@
     />
 
     <div class="space-x-5 z-10 leading-0">
-      <button v-for="lang in langs" :key="lang.code" @click="$i18n.setLocale(lang.code)" class="kb-focus group">
+      <button
+        v-for="lang in langs"
+        :key="lang.code"
+        @click="$i18n.setLocale(lang.code)"
+        class="kb-focus group"
+      >
         <Icon
           :name="lang.icon"
           class="h-5 w-5 dark:drop-shadow-lg group-focus-visible:scale-110 group-hover:scale-110 group-active:scale-95 transition-transform motion-reduce:transition-none duration-200"

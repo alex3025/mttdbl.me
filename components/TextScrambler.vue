@@ -19,7 +19,9 @@ onMounted(() => {
   // Disable animations based on user preference
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  const scrambler = new ScrambleText(container.value?.children[0] as HTMLElement, { timeOffset: props.speed });
+  const scrambler = new ScrambleText(container.value?.children[0] as HTMLElement, {
+    timeOffset: props.speed
+  });
   setTimeout(() => {
     scrambler.start();
   }, props.delay);

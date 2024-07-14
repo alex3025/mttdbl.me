@@ -4,7 +4,9 @@
       <div class="space-y-2.5 sm:space-y-1.5 text-center sm:text-left">
         <div>
           <h1 class="text-4xl sm:text-5xl font-black inline mr-2">Matteo Diblas</h1>
-          <p class="font-mono text-gray-700 text-xs sm:(text-sm mr-5) inline-block dark:text-gray-500 select-none">
+          <p
+            class="font-mono text-gray-700 text-xs sm:(text-sm mr-5) inline-block dark:text-gray-500 select-none"
+          >
             (he/him)
           </p>
         </div>
