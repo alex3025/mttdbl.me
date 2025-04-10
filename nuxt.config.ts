@@ -28,6 +28,7 @@ export default defineNuxtConfig({
     '/reddit': { redirect: 'https://reddit.com/user/alex3025' },
     '/soundcloud': { redirect: 'https://soundcloud.com/alex3025' },
     '/spotify': { redirect: 'https://open.spotify.com/artist/4hlZWyCtkVh29vqbs34Naa' },
-    '/instagram': { redirect: 'https://instagram.com/mttdbl' }
+    '/instagram': { redirect: 'https://instagram.com/mttdbl' },
+    '/paypal': { redirect: 'https://paypal.me/alex3025' }
   }
 });

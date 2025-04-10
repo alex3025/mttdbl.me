@@ -136,6 +136,11 @@ const socials = [
     name: 'Instagram',
     url: '/instagram',
     icon: 'uil:instagram'
+  },
+  {
+    name: 'PayPal',
+    url: '/paypal',
+    icon: 'ri:paypal-fill'
   }
 ];
 
